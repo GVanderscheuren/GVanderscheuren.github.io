@@ -73,7 +73,7 @@ let getAPI = async (
   let searchTerm = `?type=${type.toLowerCase()}&participants=${participants}&accessibility=${accessibility}&price=${price}`;
   //   console.log(searchTerm);
 
-  const ENDPOINT = `http://www.boredapi.com/api/activity`;
+  const ENDPOINT = `https://www.boredapi.com/api/activity`;
 
   const request = await fetch(`${ENDPOINT}${searchTerm}`);
   //   console.log(request);
